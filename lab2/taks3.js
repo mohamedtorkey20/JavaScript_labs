@@ -24,7 +24,7 @@ function convertTo12hSystem(hour) {
         period="AM";
     }
 
-    // Combine the formatted hour and period
+    
     let result = `${hour} ${period}`;
 
     return result;
