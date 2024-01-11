@@ -18,11 +18,3 @@ Dive into OOP in JavaScript, covering:
 - Prototypes and Prototype Chain
 - ES6+ Features (Classes, Arrow Functions)
 
-## Getting Started
-
-1. Clone the repository to your local machine.
-2. Navigate to the lab directory you're interested in.
-3. Follow the instructions in the lab's README to complete the exercises.
-
-
-Happy coding! 🚀
