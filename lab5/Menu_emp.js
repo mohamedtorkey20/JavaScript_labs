@@ -127,15 +127,15 @@ while(true)
     
   var opation=prompt(
     `Menu:
-    1. Add new employee - enter "add"
-    2. Get all employees - enter  "get"
-    3. Fire an employee - enter "fire"
-    4. Quit - enter "q"
+    1. Add new employee 
+    2. Get all employees 
+    3. Fire an employee 
+    4. Quit 
     Enter your choice:
      `
 );
 
-if(opation ===null || opation === "q")
+if(opation ===null || opation === "4")
 {
     break;
 }
@@ -143,7 +143,7 @@ if(opation ===null || opation === "q")
 
 switch(opation)
 {
-    case "add":
+    case "1":
          
           do {
                var FullName=prompt("Enter Employee name:");
@@ -152,7 +152,7 @@ switch(opation)
           do {
             var Email=prompt("Enter Employee Email:");
           
-        } while (Email === null || Email.length <10);
+        } while (Email === null || !(Email.length >=10 & Email.includes("@") ));
           do {
             var isManager = prompt(`
             Is the employee a manager?:
@@ -160,7 +160,7 @@ switch(opation)
             2. If normal employee - press "nrml"
             `);
             
-        } while (isManager === null);
+        } while (isManager === null || !(isManager === "mngr" || isManager=== "nrml"));
 
         do {
             var salary=prompt("Enter Employee Salary:");
@@ -170,7 +170,7 @@ switch(opation)
             var sleepMood=prompt("Enter Employee SleepMood:").toLocaleLowerCase();
 
             
-        } while (sleepMood === null || isFinite(sleepMood) );
+        } while (sleepMood === null || isFinite(sleepMood)  || !(sleepMood === "happy" || sleepMood=== "lazy"|| sleepMood=== "tried"));
         do {
         
 
@@ -181,21 +181,21 @@ switch(opation)
             Of1.hire(emp);
             
        break;
-    case "get":
+    case "2":
 
         do {
           var getemp=prompt(
             `
-            1-get AllEmployess- press All
-            2-get employee by id-press empid     
+            1-get AllEmployess
+            2-get employee by id   
             `) ;     
         } while (getemp===null);
           switch(getemp)
           {
-            case "All":
+            case "1":
                 console.log(Of1.getAllEmployees());
                 break;
-            case "empid":
+            case "2":
                 do{
                 var EmpId=Number(prompt(`Enter the ID of Employee`)) ;   
                 } while (EmpId===null || isNaN(EmpId));
@@ -206,11 +206,14 @@ switch(opation)
           }
        break;
 
-    case "fire":
+    case "3":
         do{
             var EmpId=Number(prompt(`Enter the ID of Employee`)) ;   
             } while (EmpId===null || isNaN(EmpId));
-            Of1.fire(EmpId);
+            if(Of1.fire(EmpId))
+            {
+                alert("the employee deleted successfully");
+            }
           
        break;
 
