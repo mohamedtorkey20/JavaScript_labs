@@ -1,0 +1,86 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: rgb(78, 214, 78);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 30px;
+    height: 100vh; 
+    
+}
+.form
+{
+    position: relative;
+    background-color: white;
+    width: 350px;
+    height: 250px;
+    display: flex;
+    flex-direction: column;
+    padding: 30px;
+    padding-top: 45px;
+    justify-content: flex-start;
+    text-align: center;
+    border-radius: 4px;
+}
+.form input[type='text'],
+input[type='password']
+{
+    background-color: rgb(236, 236, 236);
+    width: auto;
+    height: 50px;
+    margin-bottom: 30px;
+    border: 1px solid rgb(160, 157, 157);
+    border-radius: 2px;
+    padding-left:15px;
+}
+.form button
+{
+    background-color: rgb(22, 204, 104);
+    width: auto;
+    height: 50px;
+    color: white;
+    font-size: 25px;
+    border: 1px solid rgb(160, 157, 157);
+    border-radius: 2px;
+}
+.form p{
+    font-size: 15px;
+    
+}
+.form p a{
+    color: rgb(22, 204, 104);
+    text-decoration: none;
+}
+.error{
+    
+    background-color: rgb(230, 49, 73);
+    width: 230px;
+    height: 30px;
+   border-radius: 3px;
+   display: flex;
+   align-items: center;
+   padding-left: 30px;
+   color: white;
+
+}
+.Welcome
+{
+    position: relative;
+    background-color: rgb(243, 235, 235);
+    width: 400px;
+    height: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    border-radius: 5px;
+    
+}
+.Welcome p{
+    font-size: 30px;
+    margin-top: 10px;
+
+
+}
