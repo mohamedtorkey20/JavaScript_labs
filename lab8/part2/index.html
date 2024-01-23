@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ALARM</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+    
+<body>
+    <div class="parent">
+            <div class="clock">
+                <div class="shape">
+                   <div  id="days"></div>
+                   <div id="digital-watch">12:00:00 PM</div>
+                   <img src="photos/alarm.png"  id="show_alarm" width="20px"alt=""> 
+                  
+                </div>
+                <p>Digital Clock</p>  
+            </div>
+
+            <div id="alarm">
+                <div>
+                    <img src="photos/xmark-solid.svg" id="rmove_alarm"  alt="">
+                    <p>SET ALARM AFTER</p>
+                    <div class="shape">
+                        <div class="square">
+                            <p>HOURS</p>
+                            <input type="number" id="alarmHours"> 
+    
+                        </div>
+                        <div class="square">
+                            <p>MINUTES</p>
+                            <input type="number" id="alarmMinutes"> 
+                           
+                        </div>
+                        <div class="square">
+                            <p>SECONDS</p>
+                            <input type="number" id="alarmSeconds" >
+                            
+                        </div>
+                    </div>
+
+                    </div>             
+                     <div>
+                        <button id="set-alarm">Set</button>
+                        <button id="clear-alarm">Clear </button>
+                    </div> 
+    
+            </div>      
+    </div>
+       <script src="alarm.js"></script>
+</body>
+</html>
