@@ -1,6 +1,19 @@
+ var next =document.getElementById("next");
+ var prev=document.getElementById("prev");
+
+ 
+next.addEventListener("click",()=>{
+	addsilde(-1)
+})
+
+prev.addEventListener("click",()=>{
+	addsilde(1)
+})
+
 let slide=0
  slides(0);
  
+
 
  function addsilde(n) {
 	 slides(slide += n);
@@ -8,6 +21,7 @@ let slide=0
 
 function slides(n) {	
   let images = document.getElementsByClassName("image");
+ 
   for(let i=0;i<images.length;i++)
   {
 	  images[i].style.display="none"
@@ -28,4 +42,10 @@ function slides(n) {
 
    
 }
-  
+
+
+
+setInterval(()=>
+	{
+		addsilde(1)
+	},2000)

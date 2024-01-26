@@ -1,0 +1,82 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: rgb(78, 214, 78);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100vh; 
+    
+}
+form
+{
+    position: relative;
+    background-color: white;
+    width: 400px;
+    height: 350px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 4px;
+    
+
+
+}
+
+form input[type='text'],
+input[type='password']
+{
+    background-color: rgb(236, 236, 236);
+    border: 2px solid rgb(160, 157, 157);
+    border-radius: 2px;
+    height: 30px;
+    width: 250px;
+    padding-left: 15px;
+}
+.error{
+    color: red;
+    font-size: 16px;
+}
+
+
+form button
+{
+    background-color: rgb(22, 204, 104);
+    width: 100px;
+    height: 35px;
+    color: white;
+    font-size: 20px;
+    border: 2px solid rgb(160, 157, 157);
+    border-radius: 3px;
+} 
+ form p{
+    font-size: 15px;
+    
+}
+form p a{
+    color: rgb(22, 204, 104);
+    text-decoration: none;
+}
+
+.Welcome
+{
+    position: relative;
+    background-color: rgb(243, 235, 235);
+    width: 400px;
+    height: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    border-radius: 5px;
+    
+}
+.Welcome p{
+    font-size: 30px;
+    margin-top: 10px;
+
+
+}
+  
