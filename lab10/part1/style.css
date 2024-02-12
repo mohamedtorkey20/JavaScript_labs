@@ -1,0 +1,109 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+.diveone {
+    background-color: rgb(208, 211, 211);
+    position: relative;
+    margin: 5% auto;
+    padding: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+    max-width: 500px;
+    border-radius: 10px;
+    text-align: center; 
+    
+}
+
+.divtwo {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.divthree {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 10px;
+    gap: 20px;
+}
+
+.divthree button {
+    background-color: #0e75b5;
+    width: 55px;
+    height: 35px;
+    color: white;
+    font-size: 18px;
+    border-radius: 3px;
+    border: 1px solid #0e75b5;
+}
+
+.divthree input[type='text'] {
+    border-radius: 3px;
+    width: 80%;
+    max-width: 250px;
+    height: 35px;
+    border: 1px solid rgb(158, 154, 154);
+    border-radius: 7px;
+    margin-right: 10px;
+    padding-left: 10px;
+}
+
+.Task{
+    background-color: rgb(233, 233, 233);
+    width: 100%;
+    height: 50px;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 10px;
+    gap: 10px;
+}
+
+
+.Task p {
+    margin-left: 00px;
+    font-size: 16px;
+    color: #333;
+    flex: 1;
+}
+
+.Task button.done {
+    background-color: rgb(56, 167, 56);
+    width: 50px;
+    height: 25px;
+    color: white;
+    font-size: 14px;
+    border-radius: 3px;
+    border: 1px solid rgb(56, 167, 56);
+   
+}
+
+.Task button.delete {
+    background-color: #ff4d4d;
+    width: 50px;
+    height: 25px;
+    color: white;
+    font-size: 14px;
+    border-radius: 3px;
+    border: 1px solid #ff4d4d;
+}
+
+
+
+
+@media (max-width: 600px) {
+    .diveone {
+        max-width: 100%;
+        left: 5%;
+        margin-right: 5%;
+        margin-left: 5%;
+    }
+}
